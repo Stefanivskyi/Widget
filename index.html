@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Assignment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="widget-area" id="widgetArea">
+
+    <div class="title-area" id="titleArea" onclick="tes()">
+        <h3 class="title">Expenses</h3>
+        <span class="arrow-span">
+            <img src="img/arr.svg" class="arrow" id="arrow">
+        </span>
+    </div>
+
+    <div class="calculation-area" id="calculationArea">
+
+        <table id="myTable">
+            <thead>
+            <tr>
+                <th class="title-th" onclick="Dropdown()">
+                    <div class="dropbtn">
+                        Name <i class="fa fa-caret-down dropbtn"></i>
+                    </div>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a onclick="sortTable()">Sort by name</a>
+                    </div>
+                </th>
+                <th class="title-th">Amount ($)</th>
+            </tr>
+            </thead>
+            <tbody id="myBody">
+            <tr>
+                <td>Lunch</td>
+                <td>17.99</td>
+            </tr>
+            <tr>
+                <td>Dinner</td>
+                <td>23.50</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th class="input-th">
+                    <input type="text" id="titleInput" maxlength="18" placeholder="Title...">
+                </th>
+                <th class="input-th">
+                    <span class="amount-span">$</span>
+                    <input type="number" id="amountInput" maxlength="10" placeholder="Cost...">
+                    <img src="img/add.svg" onclick="newElement()" class="addBtn" id="add">
+                </th>
+            </tr>
+            </tfoot>
+            <caption>
+                <span class="total-price">Total:</span>
+                <div id="out">$ 41.49</div>
+            </caption>
+        </table>
+
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
