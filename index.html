@@ -25,39 +25,39 @@
 
         <table id="myTable">
             <thead>
-            <tr>
-                <th class="title-th" onclick="Dropdown()">
-                    <div class="dropbtn">
-                        Name <i class="fa fa-caret-down dropbtn"></i>
-                    </div>
-                    <div class="dropdown-content" id="myDropdown">
-                        <a onclick="sortTable()">Sort by name</a>
-                    </div>
-                </th>
-                <th class="title-th">Amount ($)</th>
-            </tr>
+                <tr>
+                    <th class="title-th" onclick="Dropdown()">
+                        <div class="dropbtn">
+                            Name <i class="fa fa-caret-down dropbtn"></i>
+                        </div>
+                        <div class="dropdown-content" id="myDropdown">
+                            <a onclick="sortTable()">Sort by name</a>
+                        </div>
+                    </th>
+                    <th class="title-th">Amount ($)</th>
+                </tr>
             </thead>
             <tbody id="myBody">
-            <tr>
-                <td>Lunch</td>
-                <td>17.99</td>
-            </tr>
-            <tr>
-                <td>Dinner</td>
-                <td>23.50</td>
-            </tr>
+                <tr>
+                    <td>Lunch</td>
+                    <td>17.99</td>
+                </tr>
+                <tr>
+                    <td>Dinner</td>
+                    <td>23.50</td>
+                </tr>
             </tbody>
             <tfoot>
-            <tr>
-                <th class="input-th">
-                    <input type="text" id="titleInput" maxlength="18" placeholder="Title...">
-                </th>
-                <th class="input-th">
-                    <span class="amount-span">$</span>
-                    <input type="number" id="amountInput" maxlength="10" placeholder="Cost...">
-                    <img src="img/add.svg" onclick="newElement()" class="addBtn" id="add">
-                </th>
-            </tr>
+                <tr>
+                    <th class="input-th">
+                        <input type="text" id="titleInput" maxlength="18" placeholder="Title...">
+                    </th>
+                    <th class="input-th">
+                        <span class="amount-span">$</span>
+                        <input type="number" id="amountInput" maxlength="10" placeholder="Cost...">
+                        <img src="img/add.svg" onclick="newElement()" class="addBtn" id="add">
+                    </th>
+                </tr>
             </tfoot>
             <caption>
                 <span class="total-price">Total:</span>
